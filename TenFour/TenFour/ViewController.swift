@@ -97,14 +97,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.present(webvc, animated: true, completion: nil)
     }
-    
-    let menuManager = MenuManager()
-    
-    @IBAction func menuPressed(_ sender: Any) {
-        
-        menuManager.openMenu()
-    }
-
 }
 
 extension UIImageView {

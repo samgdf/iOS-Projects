@@ -41,6 +41,7 @@
                                             <color key="tintColor" red="0.93926091779999998" green="1" blue="0.94023654590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="menuPressed:" destination="BYZ-38-t0r" id="6kB-n2-0h1"/>
+                                                <segue destination="jNL-eh-63C" kind="show" id="TOB-hr-u8k"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -141,6 +142,66 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
+        <!--Goals View View Controller-->
+        <scene sceneID="z6U-uw-ame">
+            <objects>
+                <viewController id="jNL-eh-63C" customClass="GoalsViewViewController" customModule="TenFour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XfV-qa-rEu"/>
+                        <viewControllerLayoutGuide type="bottom" id="NgY-mR-Ekp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yhy-if-SlM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoD-qj-cxl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="zSs-TB-B0A"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBn-sg-O9z">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Ten Four" id="Cap-GY-U7a">
+                                        <barButtonItem key="rightBarButtonItem" image="news" id="jO7-pG-Lb4">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="KIR-e3-N6R"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFJ-nx-CJA">
+                                <rect key="frame" x="67" y="64" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LoD-qj-cxl" firstAttribute="top" secondItem="Yhy-if-SlM" secondAttribute="top" id="3ex-rq-RGY"/>
+                            <constraint firstAttribute="trailing" secondItem="bBn-sg-O9z" secondAttribute="trailing" id="5bp-sF-i5l"/>
+                            <constraint firstItem="bBn-sg-O9z" firstAttribute="top" secondItem="XfV-qa-rEu" secondAttribute="bottom" id="A3P-1k-dZ5"/>
+                            <constraint firstAttribute="trailing" secondItem="LoD-qj-cxl" secondAttribute="trailing" id="Kct-Gg-6nm"/>
+                            <constraint firstItem="bBn-sg-O9z" firstAttribute="leading" secondItem="Yhy-if-SlM" secondAttribute="leading" id="Z4t-Yl-dKs"/>
+                            <constraint firstItem="LoD-qj-cxl" firstAttribute="leading" secondItem="Yhy-if-SlM" secondAttribute="leading" id="e5j-BT-Q5O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="sFJ-nx-CJA" id="9a4-FN-wcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5O-Jt-yWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="1274.2128935532235"/>
+        </scene>
         <!--Web View View Controller-->
         <scene sceneID="Pnh-A6-bNQ">
             <objects>
@@ -168,7 +229,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Ten Four" id="GWE-HH-oqT">
-                                        <barButtonItem key="leftBarButtonItem" title="←" style="plain" id="zen-EW-jc4">
+                                        <barButtonItem key="leftBarButtonItem" title="↩︎" style="plain" id="zen-EW-jc4">
                                             <color key="tintColor" red="0.98915908620000004" green="0.95574738370000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="dfu-ro-Wpo"/>
@@ -207,5 +268,9 @@
     </scenes>
     <resources>
         <image name="menu" width="19" height="19"/>
+        <image name="news" width="19" height="19"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KIR-e3-N6R"/>
+    </inferredMetricsTieBreakers>
 </document>
