@@ -11,6 +11,14 @@ import UIKit
 class WebViewViewController: UIViewController {
     
     @IBOutlet weak var webview: UIWebView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBAction func sharePressed(_ sender: UIBarButtonItem) {
+        let activityViewController = UIActivityViewController(activityItems: ["\(url!)"], applicationActivities: nil)
+        
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityViewController, animated: true, completion: nil	)
+    }
     
     var url: String?
 
@@ -18,6 +26,9 @@ class WebViewViewController: UIViewController {
         super.viewDidLoad()
 
         webview.loadRequest(URLRequest(url: URL(string: url!)!))
+        
+        navigationBar.topItem!.title = "\(url!)"
+
         
     }
 

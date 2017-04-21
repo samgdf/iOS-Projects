@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,21 +24,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Elq-yK-Oty">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="vkW-3X-oI1"/>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaL-KG-ZSB">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.98915908620000004" green="0.95574738370000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Ten Four" id="gI5-vL-ZHa">
+                                    <navigationItem title="Post" id="gI5-vL-ZHa">
                                         <barButtonItem key="leftBarButtonItem" image="menu" width="19" style="plain" id="9zO-rt-BYW">
-                                            <color key="tintColor" red="0.93926091779999998" green="1" blue="0.94023654590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="menuPressed:" destination="BYZ-38-t0r" id="6kB-n2-0h1"/>
                                                 <segue destination="jNL-eh-63C" kind="show" id="TOB-hr-u8k"/>
@@ -61,7 +61,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text text etxttext etxttext etxttext etxttext etxttext etxt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBN-LB-v9E">
                                                     <rect key="frame" x="136" y="65" width="231" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq7-zN-t9g">
@@ -73,7 +73,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label label algae pokemon walker eriksen winning bitcoin stocks job" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdM-Qv-GRV">
                                                     <rect key="frame" x="136" y="16" width="223" height="41"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GTR-jO-FwV">
@@ -106,6 +106,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="Cq7-zN-t9g" secondAttribute="bottom" constant="8" id="w3p-hy-oUU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="Author" destination="Cq7-zN-t9g" id="aXW-AS-osN"/>
                                             <outlet property="Description" destination="yBN-LB-v9E" id="wsE-Kx-fSi"/>
@@ -121,6 +122,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="uIq-2H-fRP" secondAttribute="trailing" id="3SM-iI-MV2"/>
                             <constraint firstItem="WaL-KG-ZSB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EVR-gm-Luq"/>
@@ -133,12 +135,20 @@
                             <constraint firstItem="uIq-2H-fRP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tZi-Xe-YLG"/>
                             <constraint firstAttribute="trailing" secondItem="Elq-yK-Oty" secondAttribute="trailing" id="yHR-LD-TQC"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tcU-K8-wWI" appends="YES" id="qBx-xQ-qau"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="uIq-2H-fRP" id="9D6-s6-OgR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="tcU-K8-wWI">
+                    <connections>
+                        <segue destination="jNL-eh-63C" kind="show" id="Z2d-Pb-T6l"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
@@ -156,21 +166,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoD-qj-cxl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="zSs-TB-B0A"/>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBn-sg-O9z">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Ten Four" id="Cap-GY-U7a">
+                                    <navigationItem title="Goals" id="Cap-GY-U7a">
                                         <barButtonItem key="rightBarButtonItem" image="news" id="jO7-pG-Lb4">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="KIR-e3-N6R"/>
                                             </connections>
@@ -185,6 +195,7 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LoD-qj-cxl" firstAttribute="top" secondItem="Yhy-if-SlM" secondAttribute="top" id="3ex-rq-RGY"/>
                             <constraint firstAttribute="trailing" secondItem="bBn-sg-O9z" secondAttribute="trailing" id="5bp-sF-i5l"/>
@@ -193,14 +204,22 @@
                             <constraint firstItem="bBn-sg-O9z" firstAttribute="leading" secondItem="Yhy-if-SlM" secondAttribute="leading" id="Z4t-Yl-dKs"/>
                             <constraint firstItem="LoD-qj-cxl" firstAttribute="leading" secondItem="Yhy-if-SlM" secondAttribute="leading" id="e5j-BT-Q5O"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WKW-SJ-qjk" appends="YES" id="stp-iD-CKr"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="webView" destination="sFJ-nx-CJA" id="9a4-FN-wcg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5O-Jt-yWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="WKW-SJ-qjk">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" action="showDetailViewController:sender:" id="dI2-UU-Y9m"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="724" y="1274.2128935532235"/>
+            <point key="canvasLocation" x="-1692" y="139"/>
         </scene>
         <!--Web View View Controller-->
         <scene sceneID="Pnh-A6-bNQ">
@@ -216,23 +235,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSq-BH-tJf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="QHj-pe-nVW"/>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v20-cR-gvC">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.98915908620000004" green="0.95574738370000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Ten Four" id="GWE-HH-oqT">
-                                        <barButtonItem key="leftBarButtonItem" title="↩︎" style="plain" id="zen-EW-jc4">
-                                            <color key="tintColor" red="0.98915908620000004" green="0.95574738370000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <navigationItem title="Goals Post" id="GWE-HH-oqT">
+                                        <barButtonItem key="leftBarButtonItem" image="close" style="plain" id="zen-EW-jc4">
+                                            <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="dfu-ro-Wpo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="share" id="bgU-8J-eJa">
+                                            <color key="tintColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="sharePressed:" destination="rmP-U5-p3B" id="g9O-Z0-kCb"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -258,6 +283,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="navigationBar" destination="v20-cR-gvC" id="che-9A-nF5"/>
                         <outlet property="webview" destination="6SC-cV-ahq" id="ZN4-Tt-Upa"/>
                     </connections>
                 </viewController>
@@ -267,10 +293,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="close" width="19" height="19"/>
         <image name="menu" width="19" height="19"/>
         <image name="news" width="19" height="19"/>
+        <image name="share" width="19" height="5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KIR-e3-N6R"/>
+        <segue reference="dfu-ro-Wpo"/>
+        <segue reference="Z2d-Pb-T6l"/>
     </inferredMetricsTieBreakers>
 </document>

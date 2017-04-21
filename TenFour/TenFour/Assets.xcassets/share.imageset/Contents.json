@@ -2,25 +2,22 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "menux1.png",
+      "filename" : "sharex1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "menux2.png",
+      "filename" : "sharex2.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "menux3.png",
+      "filename" : "sharex3.png",
       "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
-  },
-  "properties" : {
-    "template-rendering-intent" : "original"
   }
 }
