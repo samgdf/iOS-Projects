@@ -36,7 +36,7 @@
                                     <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Post" id="gI5-vL-ZHa">
+                                    <navigationItem title="News" id="gI5-vL-ZHa">
                                         <barButtonItem key="leftBarButtonItem" image="menu" width="19" style="plain" id="9zO-rt-BYW">
                                             <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
