@@ -11,12 +11,32 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    let cellSpacingHeight: CGFloat = 5
     
     var articles: [Article]? = []
-
+    var refreshControl: UIRefreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchArticles()
+                
+        refreshControl.tintColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
+        refreshControl.backgroundColor = UIColor(red:0.09, green:0.09, blue:0.09, alpha:1.0)
+        refreshControl.attributedTitle = NSAttributedString(string: "Kicking off...", attributes: [NSForegroundColorAttributeName: refreshControl.tintColor])
+        
+        refreshControl.addTarget(self, action: #selector(ViewController.reloadData), for: UIControlEvents.valueChanged)
+        
+        if #available(iOS 10.0, *) {
+        tableView.refreshControl = refreshControl
+        } else {
+        tableView.addSubview(refreshControl)
+        }
+    }
+    
+    func reloadData() {
+        fetchArticles()
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
     }
     
     func fetchArticles(){
@@ -40,12 +60,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let article = Article()
                         
                         if let title = articleFromJSON["title"] as? String,
-                        let author = articleFromJSON["author"] as? String,
                         let desc = articleFromJSON["description"] as? String,
                         let url = articleFromJSON["url"] as? String,
                             let urlimage = articleFromJSON["urlToImage"] as? String {
                             
-                            article.author = author
                             article.desc = desc
                             article.headline = title
                             article.url = url
@@ -75,14 +93,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.Title.text = self.articles?[indexPath.item].headline
         cell.Description.text = self.articles?[indexPath.item].desc
-        cell.Author.text = self.articles?[indexPath.item].author
         cell.ImgView.downloadImage(from: (self.articles?[indexPath.item].imageURL!)!)
+        
         return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return cellSpacingHeight
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
+    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.articles?.count ?? 0

@@ -1,22 +1,17 @@
 //
-//  ArticleCell.swift
+//  GoalCell.swift
 //  TenFour
 //
-//  Created by Sam Goldfield on 4/4/17.
+//  Created by Sam Goldfield on 4/24/17.
 //  Copyright © 2017 samgdf. All rights reserved.
 //
 
 import UIKit
 
-class ArticleCell: UITableViewCell {
-
-    @IBOutlet weak var ImgView: UIImageView!
+class GoalCell: UITableViewCell {
     
     @IBOutlet weak var Title: UILabel!
-    
-    @IBOutlet weak var Description: UILabel!
 
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

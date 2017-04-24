@@ -15,6 +15,8 @@
 		2105A1181E943CD10074FBEA /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A1171E943CD10074FBEA /* ArticleCell.swift */; };
 		2105A11A1E944C590074FBEA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A1191E944C590074FBEA /* Article.swift */; };
 		2105A11C1E959D1A0074FBEA /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A11B1E959D1A0074FBEA /* WebViewViewController.swift */; };
+		2131DFBE1EAE3F6E00ED0566 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131DFBD1EAE3F6E00ED0566 /* GoalCell.swift */; };
+		2131DFC01EAE40DD00ED0566 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131DFBF1EAE40DD00ED0566 /* Listing.swift */; };
 		215D0E821E9B090200D77B80 /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 215D0E811E9B090200D77B80 /* BaseCell.xib */; };
 		21875A491EA7A840006F9F06 /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21875A481EA7A840006F9F06 /* BaseViewCell.swift */; };
 		21875A4F1EA85353006F9F06 /* GoalsViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21875A4E1EA85353006F9F06 /* GoalsViewViewController.swift */; };
@@ -31,10 +33,11 @@
 		2105A1171E943CD10074FBEA /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		2105A1191E944C590074FBEA /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		2105A11B1E959D1A0074FBEA /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		2131DFBD1EAE3F6E00ED0566 /* GoalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		2131DFBF1EAE40DD00ED0566 /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		215D0E811E9B090200D77B80 /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
 		21875A481EA7A840006F9F06 /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewCell.swift; sourceTree = "<group>"; };
 		21875A4E1EA85353006F9F06 /* GoalsViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewViewController.swift; sourceTree = "<group>"; };
-		21875A501EA85E7D006F9F06 /* kane.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = kane.mp4; path = ../../../../Downloads/kane.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +82,8 @@
 				215D0E811E9B090200D77B80 /* BaseCell.xib */,
 				21875A481EA7A840006F9F06 /* BaseViewCell.swift */,
 				21875A4E1EA85353006F9F06 /* GoalsViewViewController.swift */,
-				21875A501EA85E7D006F9F06 /* kane.mp4 */,
+				2131DFBD1EAE3F6E00ED0566 /* GoalCell.swift */,
+				2131DFBF1EAE40DD00ED0566 /* Listing.swift */,
 			);
 			path = TenFour;
 			sourceTree = "<group>";
@@ -159,9 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21875A491EA7A840006F9F06 /* BaseViewCell.swift in Sources */,
+				2131DFC01EAE40DD00ED0566 /* Listing.swift in Sources */,
 				2105A11C1E959D1A0074FBEA /* WebViewViewController.swift in Sources */,
 				2105A11A1E944C590074FBEA /* Article.swift in Sources */,
 				2105A1081E9430300074FBEA /* ViewController.swift in Sources */,
+				2131DFBE1EAE3F6E00ED0566 /* GoalCell.swift in Sources */,
 				2105A1061E9430300074FBEA /* AppDelegate.swift in Sources */,
 				21875A4F1EA85353006F9F06 /* GoalsViewViewController.swift in Sources */,
 				2105A1181E943CD10074FBEA /* ArticleCell.swift in Sources */,
