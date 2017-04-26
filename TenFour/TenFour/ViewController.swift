@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     let cellSpacingHeight: CGFloat = 5
+    let cellReuseIdentifier = "cell"
     
     var articles: [Article]? = []
     var refreshControl: UIRefreshControl = UIRefreshControl()
@@ -19,6 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchArticles()
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
                 
         refreshControl.tintColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
         refreshControl.backgroundColor = UIColor(red:0.09, green:0.09, blue:0.09, alpha:1.0)
@@ -60,11 +62,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let article = Article()
                         
                         if let title = articleFromJSON["title"] as? String,
-                        let desc = articleFromJSON["description"] as? String,
                         let url = articleFromJSON["url"] as? String,
                             let urlimage = articleFromJSON["urlToImage"] as? String {
                             
-                            article.desc = desc
                             article.headline = title
                             article.url = url
                             article.imageURL = urlimage
@@ -90,10 +90,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleCell
-        
+
         cell.Title.text = self.articles?[indexPath.item].headline
-        cell.Description.text = self.articles?[indexPath.item].desc
         cell.ImgView.downloadImage(from: (self.articles?[indexPath.item].imageURL!)!)
+        cell.ImgView.layer.cornerRadius = 3
         
         return cell
     }

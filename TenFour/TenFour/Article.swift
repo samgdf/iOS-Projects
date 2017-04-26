@@ -11,7 +11,6 @@ import UIKit
 class Article: NSObject {
 
     var headline: String?
-    var desc: String?
     var url: String?
     var imageURL: String?
     
