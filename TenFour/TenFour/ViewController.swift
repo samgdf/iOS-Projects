@@ -63,9 +63,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         
                         if let title = articleFromJSON["title"] as? String,
                         let url = articleFromJSON["url"] as? String,
+                            let time = articleFromJSON["publishedAt"] as? String,
                             let urlimage = articleFromJSON["urlToImage"] as? String {
                             
                             article.headline = title
+                            article.time = time
                             article.url = url
                             article.imageURL = urlimage
                             
@@ -92,6 +94,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleCell
 
         cell.Title.text = self.articles?[indexPath.item].headline
+        cell.Time.text = self.articles?[indexPath.item].time
         cell.ImgView.downloadImage(from: (self.articles?[indexPath.item].imageURL!)!)
         cell.ImgView.layer.cornerRadius = 3
         

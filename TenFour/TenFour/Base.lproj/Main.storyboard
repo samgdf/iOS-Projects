@@ -71,14 +71,23 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdM-Qv-GRV">
-                                                    <rect key="frame" x="136" y="5" width="222.5" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <rect key="frame" x="136" y="5" width="222.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvv-kd-eVo">
+                                                    <rect key="frame" x="136" y="48.5" width="223" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="cdM-Qv-GRV" firstAttribute="leading" secondItem="GTR-jO-FwV" secondAttribute="trailing" constant="8" id="Aq7-R3-uGT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gvv-kd-eVo" secondAttribute="trailing" constant="8" id="FC9-YN-nBm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gvv-kd-eVo" secondAttribute="bottom" constant="13" id="L97-lj-LXq"/>
+                                                <constraint firstItem="gvv-kd-eVo" firstAttribute="leading" secondItem="GTR-jO-FwV" secondAttribute="trailing" constant="8" id="O6r-dt-EdD"/>
                                                 <constraint firstItem="cdM-Qv-GRV" firstAttribute="top" secondItem="kHO-fM-RKb" secondAttribute="top" constant="5" id="Yqz-et-BMr"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cdM-Qv-GRV" secondAttribute="trailing" constant="8" id="bkN-zM-apZ"/>
                                                 <constraint firstItem="GTR-jO-FwV" firstAttribute="top" secondItem="kHO-fM-RKb" secondAttribute="topMargin" id="dLT-bs-5bd"/>
@@ -88,6 +97,7 @@
                                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="ImgView" destination="GTR-jO-FwV" id="WTr-8H-4Gk"/>
+                                            <outlet property="Time" destination="gvv-kd-eVo" id="oYp-VG-L6K"/>
                                             <outlet property="Title" destination="cdM-Qv-GRV" id="Omj-1m-eI8"/>
                                         </connections>
                                     </tableViewCell>
@@ -366,6 +376,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="dgz-Ty-CJ9"/>
         <segue reference="s3A-d2-aM5"/>
-        <segue reference="dfu-ro-Wpo"/>
+        <segue reference="8qh-jw-YV2"/>
     </inferredMetricsTieBreakers>
 </document>

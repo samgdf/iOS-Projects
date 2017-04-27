@@ -13,7 +13,8 @@ class ArticleCell: UITableViewCell {
     @IBOutlet weak var ImgView: UIImageView!
     
     @IBOutlet weak var Title: UILabel!
-
+    
+    @IBOutlet weak var Time: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
