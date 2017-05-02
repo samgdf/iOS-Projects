@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var articles: [Article]? = []
     var refreshControl: UIRefreshControl = UIRefreshControl()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchArticles()
@@ -61,13 +62,39 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         
                         let article = Article()
                         
+                        /* MARK: PULL ORIGINAL POST TIME */
+                        
                         if let title = articleFromJSON["title"] as? String,
                         let url = articleFromJSON["url"] as? String,
                             let time = articleFromJSON["publishedAt"] as? String,
                             let urlimage = articleFromJSON["urlToImage"] as? String {
                             
+                            /* MARK: GET LOCAL TIME
+                            
+                            let current = Date()
+                            let calendar = Calendar.current
+                            
+                            let hour = calendar.component(.hour, from: current)
+                            let minutes = calendar.component(.minute, from: current)
+                            
+                            */
+                            
+                            /* MARK: CHANGE ORIGINAL TO FORMAT */
+                            
+                            let dateFormatter = DateFormatter()
+                            let timeFormatter = DateFormatter()
+                            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                            dateFormatter.locale = Locale.init(identifier: "en_GB")
+                            
+                            let dateObj = dateFormatter.date(from: time)
+                            let timeObj = dateFormatter.date(from: time)
+                            
+                            dateFormatter.dateFormat = "MMM dd, yyyy"
+                            timeFormatter.dateFormat = "HH:mm"
+                            
+                            
                             article.headline = title
-                            article.time = time
+                            article.time = ("\(dateFormatter.string(from: dateObj!)) at \(timeFormatter.string(from: timeObj!))")
                             article.url = url
                             article.imageURL = urlimage
                             
@@ -89,7 +116,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
             task.resume()
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleCell
 

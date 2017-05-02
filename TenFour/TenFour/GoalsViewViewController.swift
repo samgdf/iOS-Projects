@@ -15,31 +15,39 @@ class GoalsViewViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchGoals()
+      /* fetchGoals() */
     }
     
+    /*
     func fetchGoals(){
         let urlRequest = URLRequest(url: URL(string: "https://www.reddit.com/r/soccer/.json")!)
     }
     
-  /*  let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+    let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
         if error != nil {
             print(error)
         }
-        do {
-            let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String : AnyObject] {
-            
-                if thingsFromJson = json["things"] as? [[String: AnyObject]] {
-                    for thingsFromJson in thingsFromJson {
-                        if let title = thingsFromJson["title"] as? String,
-                        if
+        if let redditSub = (try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any],
+                    let dataDic = redditSub["data"] as? [String:Any],
+                    let children = dataDic["children"] as? [[String:Any]] {
+                        
+                        for child in children {
+                            if let name = child["name"] as? String {
+                                names.append(name)
+                            }
+                        }
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
                     }
                 }
-        }
+            }
+            task.resume()
         
     } catch let error {
         print(error)
-    } */
+    }
+    */
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

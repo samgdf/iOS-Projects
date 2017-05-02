@@ -79,7 +79,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvv-kd-eVo">
                                                     <rect key="frame" x="136" y="48.5" width="223" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -257,7 +257,7 @@
                                     <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="404" id="GWE-HH-oqT">
+                                    <navigationItem title="Loading..." id="GWE-HH-oqT">
                                         <barButtonItem key="leftBarButtonItem" image="close" id="zen-EW-jc4">
                                             <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
@@ -371,11 +371,11 @@
         <image name="menu" width="19" height="19"/>
         <image name="news" width="19" height="19"/>
         <image name="settings" width="19" height="19"/>
-        <image name="share" width="19" height="5"/>
+        <image name="share" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dgz-Ty-CJ9"/>
-        <segue reference="s3A-d2-aM5"/>
-        <segue reference="8qh-jw-YV2"/>
+        <segue reference="kKb-la-jsF"/>
+        <segue reference="dfu-ro-Wpo"/>
+        <segue reference="Rxa-88-WSo"/>
     </inferredMetricsTieBreakers>
 </document>
