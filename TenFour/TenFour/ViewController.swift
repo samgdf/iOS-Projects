@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         fetchArticles()
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
                 
@@ -41,6 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }
+    
     
     func fetchArticles(){
         let urlRequest = URLRequest(url: URL(string: "https://newsapi.org/v1/articles?source=four-four-two&sortBy=top&apiKey=d2862baa27de46009dd2a17391f176e6" )!)
