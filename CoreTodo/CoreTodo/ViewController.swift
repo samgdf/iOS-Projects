@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
 
@@ -14,6 +16,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var tasks: [Task] = []
     var filteredTasks = [Task]()
+    var playerController = AVPlayerViewController()
+    var player: AVPlayer?
     
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -24,6 +28,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         filteredTasks = tasks
         
         setupTitle()
+        
+        let videoString: String? = Bundle.main.path(forResource: "truck", ofType: ".mp4")
+        
+        if let url = videoString {
+            let videoURL = NSURL(fileURLWithPath: url)
+            
+            self.player = AVPlayer(url: videoURL as URL)
+            self.playerController.player = self.player
+        }
         
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
@@ -39,12 +52,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableVie.reloadData()
     }
 
+    @IBAction func playVideo(_ sender: Any) {
+        self.present(self.playerController, animated: true, completion: {
+            self.playerController.player?.play()
+        })
+    }
+    
     private func setupTitle() {
         let titleImageView = UIImageView(image: #imageLiteral(resourceName: "runn"))
         titleImageView.frame = CGRect(x: 0, y: 0, width: 36, height: 20)
         titleImageView.contentMode = .scaleAspectFit
         
         navigationItem.titleView = titleImageView
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

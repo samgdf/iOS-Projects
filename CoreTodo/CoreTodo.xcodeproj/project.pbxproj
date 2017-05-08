@@ -14,6 +14,7 @@
 		21128F611EBA8589001186FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21128F601EBA8589001186FF /* Assets.xcassets */; };
 		21128F641EBA8589001186FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21128F621EBA8589001186FF /* LaunchScreen.storyboard */; };
 		21128F6C1EBA868A001186FF /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21128F6B1EBA868A001186FF /* AddTaskViewController.swift */; };
+		217863901EBCFD2900BDB647 /* truck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2178638F1EBCFAA300BDB647 /* truck.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		21128F631EBA8589001186FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21128F651EBA8589001186FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21128F6B1EBA868A001186FF /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		2178638F1EBCFAA300BDB647 /* truck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = truck.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		21128F551EBA8588001186FF /* CoreTodo */ = {
 			isa = PBXGroup;
 			children = (
+				2178638F1EBCFAA300BDB647 /* truck.mp4 */,
 				21128F561EBA8588001186FF /* AppDelegate.swift */,
 				21128F581EBA8588001186FF /* ViewController.swift */,
 				21128F5A1EBA8588001186FF /* Main.storyboard */,
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21128F641EBA8589001186FF /* LaunchScreen.storyboard in Resources */,
+				217863901EBCFD2900BDB647 /* truck.mp4 in Resources */,
 				21128F611EBA8589001186FF /* Assets.xcassets in Resources */,
 				21128F5C1EBA8588001186FF /* Main.storyboard in Resources */,
 			);
@@ -312,6 +316,7 @@
 				21128F6A1EBA8589001186FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
