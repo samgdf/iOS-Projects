@@ -40,13 +40,13 @@
                                         <barButtonItem key="leftBarButtonItem" image="menu" width="19" id="9zO-rt-BYW">
                                             <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="jNL-eh-63C" kind="show" id="kKb-la-jsF"/>
+                                                <segue destination="jNL-eh-63C" kind="showDetail" action="showViewController:sender:" id="kKb-la-jsF"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="settings" id="r2r-R4-s86">
                                             <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="xp0-oy-rYh" kind="show" id="Rxa-88-WSo"/>
+                                                <segue destination="xp0-oy-rYh" kind="showDetail" action="showViewController:sender:" id="Rxa-88-WSo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -163,13 +163,13 @@
                                         <barButtonItem key="leftBarButtonItem" image="settings" id="LPF-bJ-3bD">
                                             <color key="tintColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="xp0-oy-rYh" kind="show" id="dgz-Ty-CJ9"/>
+                                                <segue destination="xp0-oy-rYh" kind="showDetail" action="showViewController:sender:" id="dgz-Ty-CJ9"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="news" id="jO7-pG-Lb4">
                                             <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="gEK-e1-wQd" kind="show" id="SJb-FI-twu"/>
+                                                <segue destination="gEK-e1-wQd" kind="showDetail" action="showViewController:sender:" id="SJb-FI-twu"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -266,7 +266,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="close" id="zen-EW-jc4">
                                             <color key="tintColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="gEK-e1-wQd" kind="show" id="dfu-ro-Wpo"/>
+                                                <segue destination="gEK-e1-wQd" kind="showDetail" action="showViewController:sender:" id="dfu-ro-Wpo"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="share" id="bgU-8J-eJa">
@@ -331,13 +331,13 @@
                                         <barButtonItem key="leftBarButtonItem" image="news" id="hxx-vV-wZm">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="gEK-e1-wQd" kind="show" id="8qh-jw-YV2"/>
+                                                <segue destination="gEK-e1-wQd" kind="showDetail" id="8qh-jw-YV2"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="menu" id="tVn-dt-EAo">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="jNL-eh-63C" kind="show" id="s3A-d2-aM5"/>
+                                                <segue destination="jNL-eh-63C" kind="showDetail" action="showViewController:sender:" id="s3A-d2-aM5"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -375,7 +375,7 @@
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6Gj-O8-fPm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Gj-O8-fPm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -397,8 +397,8 @@
         <image name="share" width="19" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dfu-ro-Wpo"/>
-        <segue reference="Rxa-88-WSo"/>
-        <segue reference="s3A-d2-aM5"/>
+        <segue reference="kKb-la-jsF"/>
+        <segue reference="8qh-jw-YV2"/>
+        <segue reference="dgz-Ty-CJ9"/>
     </inferredMetricsTieBreakers>
 </document>
